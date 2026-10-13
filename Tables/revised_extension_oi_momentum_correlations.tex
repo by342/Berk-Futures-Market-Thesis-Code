@@ -1,0 +1,39 @@
+\begin{table}[H]
+\centering
+\caption{Return-momentum correlations for raw and adjusted open-interest growth.}
+\label{tbl-revised-extension-oi-momentum-correlations}
+\renewcommand{\arraystretch}{1.08}
+\makebox[\linewidth][c]{%
+\resizebox{0.94\linewidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+Variable & R$_t$ & R$_{t-1}$ & R$_{t-2}$ & R$_{t-4}$ & Raw $\Delta OI_t$ & Momentum-adj. $\Delta OI_t$ \\
+\midrule
+\multicolumn{7}{l}{\textit{Panel A: Pooled BTC/ETH CFTC open-interest growth}} \\
+R$_t$ & 1.000 & -0.091 & 0.078 & 0.142 & 0.707 & 0.000 \\
+R$_{t-1}$ & -0.091 & 1.000 & -0.091 & -0.020 & 0.006 & 0.099 \\
+R$_{t-2}$ & 0.078 & -0.091 & 1.000 & 0.078 & 0.068 & 0.020 \\
+R$_{t-4}$ & 0.142 & -0.020 & 0.078 & 1.000 & 0.049 & -0.072 \\
+Raw $\Delta OI_t$ & 0.707 & 0.006 & 0.068 & 0.049 & 1.000 & 0.708 \\
+Momentum-adj. $\Delta OI_t$ & 0.000 & 0.099 & 0.020 & -0.072 & 0.708 & 1.000 \\
+\midrule
+\multicolumn{7}{l}{\textit{Panel B: BTC-only open-interest growth}} \\
+R$_t$ & 1.000 & -0.091 & 0.078 & 0.142 & 0.649 & -0.000 \\
+R$_{t-1}$ & -0.091 & 1.000 & -0.091 & -0.020 & 0.017 & 0.100 \\
+R$_{t-2}$ & 0.078 & -0.091 & 1.000 & 0.078 & 0.064 & 0.019 \\
+R$_{t-4}$ & 0.142 & -0.020 & 0.078 & 1.000 & 0.019 & -0.095 \\
+BTC raw $\Delta OI_t$ & 0.649 & 0.017 & 0.064 & 0.019 & 1.000 & 0.761 \\
+BTC momentum-adj. $\Delta OI_t$ & -0.000 & 0.100 & 0.019 & -0.095 & 0.761 & 1.000 \\
+\bottomrule
+\end{tabular}
+}%
+}
+\vspace{0.35em}
+\par\noindent\makebox[\linewidth][c]{%
+\begin{minipage}{0.96\linewidth}
+\footnotesize
+\raggedright
+This table reports pairwise correlations between current and lagged weekly returns, raw open-interest growth, and the momentum-adjusted open-interest growth variables used in the PCA indices. The momentum-adjusted variable removes the contemporaneous $R_t$ component from raw open-interest growth, so its correlation with $R_t$ should be mechanically close to zero. Lagged-return correlations are reported as a robustness check on remaining return-momentum exposure.
+\end{minipage}%
+}
+\end{table}

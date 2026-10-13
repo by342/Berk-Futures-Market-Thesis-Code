@@ -1,0 +1,93 @@
+\FloatBarrier
+\noindent\begin{minipage}{\linewidth}
+\centering
+\captionof{table}{BTC-only return dependent-variable robustness test: static PCA.}
+\label{tbl-revised-extension-btc-return-outcome-static}
+\renewcommand{\arraystretch}{1.06}
+\makebox[\linewidth][c]{%
+\resizebox{0.94\linewidth}{!}{%
+\begin{tabular}{lcccccc}
+\toprule
+Variable & R$_{t,t+1}$ (1) & R$_{t,t+2}$ (2) & R$_{t,t+3}$ (3) & R$_{t,t+4}$ (4) & R$_{t,t+6}$ (5) & R$_{t,t+8}$ (6) \\
+\midrule
+\multicolumn{7}{l}{\textit{Panel A: Pooled BTC/ETH returns}} \\
+BTC Adj. CFPI$_t$ & 0.013*** & 0.019** & 0.017** & 0.021* & 0.022* & 0.022* \\
+ & (2.58) & (2.35) & (2.11) & (1.94) & (1.67) & (1.81) \\
+R$_t$ & -0.103* & -0.022 & -0.046 & 0.094 & -0.009 & -0.014 \\
+ & (-1.72) & (-0.28) & (-0.49) & (0.97) & (-0.07) & (-0.11) \\
+Google$_t$ & -0.003 & -0.010 & -0.003 & -0.005 & -0.011 & -0.014 \\
+ & (-0.33) & (-0.72) & (-0.19) & (-0.27) & (-0.46) & (-0.57) \\
+R$^2$ & 0.032 & 0.030 & 0.015 & 0.019 & 0.013 & 0.011 \\
+N & 240 & 239 & 238 & 237 & 235 & 234 \\
+\midrule
+\multicolumn{7}{l}{\textit{Panel B: Bitcoin returns only}} \\
+BTC Adj. CFPI$_t$ & 0.013*** & 0.013* & 0.012 & 0.018* & 0.015 & 0.010 \\
+ & (2.89) & (1.81) & (1.59) & (1.68) & (1.31) & (0.87) \\
+BTC $R_t$ & -0.100 & 0.010 & -0.049 & 0.063 & 0.044 & 0.028 \\
+ & (-1.44) & (0.13) & (-0.51) & (0.66) & (0.33) & (0.19) \\
+Google$_t$ & -0.003 & -0.005 & 0.001 & -0.000 & -0.007 & -0.009 \\
+ & (-0.34) & (-0.41) & (0.10) & (-0.03) & (-0.31) & (-0.38) \\
+R$^2$ & 0.037 & 0.017 & 0.010 & 0.016 & 0.007 & 0.003 \\
+N & 240 & 239 & 238 & 237 & 235 & 233 \\
+\bottomrule
+\end{tabular}
+}%
+}
+\vspace{0.25em}
+\par\noindent\makebox[\linewidth][c]{%
+\begin{minipage}{0.94\linewidth}
+\footnotesize
+\raggedright
+This table compares the BTC-only momentum-adjusted futures pressure index under the pooled BTC/ETH return outcome and a Bitcoin-only return outcome. Panel A uses cumulative future pooled BTC/ETH returns and includes pooled contemporaneous $R_t$ and $Google_t$ controls. Panel B uses cumulative future Bitcoin returns and replaces the return control with contemporaneous Bitcoin weekly returns. HAC/Newey--West t-statistics are in parentheses. *, **, and *** denote significance at the 10\%, 5\%, and 1\% levels.
+\end{minipage}%
+}
+\end{minipage}
+\par\medskip
+\FloatBarrier
+\clearpage
+
+\noindent\begin{minipage}{\linewidth}
+\centering
+\captionof{table}{BTC-only return dependent-variable robustness test: EW shrinkage anchored PCA.}
+\label{tbl-revised-extension-btc-return-outcome-dynamic}
+\renewcommand{\arraystretch}{1.06}
+\makebox[\linewidth][c]{%
+\resizebox{0.94\linewidth}{!}{%
+\begin{tabular}{lcccccc}
+\toprule
+Variable & R$_{t,t+1}$ (1) & R$_{t,t+2}$ (2) & R$_{t,t+3}$ (3) & R$_{t,t+4}$ (4) & R$_{t,t+6}$ (5) & R$_{t,t+8}$ (6) \\
+\midrule
+\multicolumn{7}{l}{\textit{Panel A: Pooled BTC/ETH returns}} \\
+BTC Dynamic Adj. CFPI$_t$ & 0.013** & 0.018* & 0.017 & 0.018 & 0.018 & 0.011 \\
+ & (1.99) & (1.93) & (1.55) & (1.49) & (1.21) & (0.72) \\
+R$_t$ & -0.080 & 0.017 & 0.007 & 0.183* & 0.086 & 0.083 \\
+ & (-1.27) & (0.23) & (0.07) & (1.69) & (0.56) & (0.56) \\
+Google$_t$ & -0.002 & -0.005 & 0.004 & 0.005 & 0.001 & 0.006 \\
+ & (-0.15) & (-0.36) & (0.23) & (0.27) & (0.04) & (0.29) \\
+R$^2$ & 0.020 & 0.016 & 0.009 & 0.017 & 0.006 & 0.003 \\
+N & 220 & 219 & 218 & 217 & 215 & 214 \\
+\midrule
+\multicolumn{7}{l}{\textit{Panel B: Bitcoin returns only}} \\
+BTC Dynamic Adj. CFPI$_t$ & 0.013** & 0.014 & 0.011 & 0.013 & 0.010 & -0.004 \\
+ & (2.12) & (1.56) & (1.23) & (1.16) & (0.78) & (-0.29) \\
+BTC $R_t$ & -0.043 & 0.031 & 0.013 & 0.166 & 0.144 & 0.119 \\
+ & (-0.60) & (0.36) & (0.13) & (1.55) & (0.96) & (0.78) \\
+Google$_t$ & 0.000 & 0.001 & 0.010 & 0.010 & 0.004 & 0.009 \\
+ & (0.01) & (0.10) & (0.76) & (0.65) & (0.21) & (0.45) \\
+R$^2$ & 0.018 & 0.012 & 0.011 & 0.018 & 0.006 & 0.003 \\
+N & 220 & 219 & 218 & 217 & 215 & 213 \\
+\bottomrule
+\end{tabular}
+}%
+}
+\vspace{0.25em}
+\par\noindent\makebox[\linewidth][c]{%
+\begin{minipage}{0.94\linewidth}
+\footnotesize
+\raggedright
+This table repeats the dependent-variable comparison for the no-lookahead EW shrinkage anchored PCA version of the BTC-only momentum-adjusted futures pressure index. The Bitcoin-only specification residualizes BTC open-interest growth with respect to contemporaneous Bitcoin weekly returns before PCA construction. HAC/Newey--West t-statistics are in parentheses. *, **, and *** denote significance at the 10\%, 5\%, and 1\% levels.
+\end{minipage}%
+}
+\end{minipage}
+\par\medskip
+\FloatBarrier
